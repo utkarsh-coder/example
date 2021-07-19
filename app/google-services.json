@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "849300757380",
+    "project_id": "listennotification",
+    "storage_bucket": "listennotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849300757380:android:a681f89513742736505bd1",
+        "android_client_info": {
+          "package_name": "com.test.listennotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849300757380-ldj1o1cfq83va8a4hn727cu2vnp2uu6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALU3wuxGxMcs9hEVwpVsNDBOk4whSkXH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849300757380-ldj1o1cfq83va8a4hn727cu2vnp2uu6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

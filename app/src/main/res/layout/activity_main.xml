@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:paddingBottom="100dp"
+        android:background="@drawable/frame_top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo_bck"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_enable_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_cover"
+        android:layout_below="@+id/frame_top"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="70dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/text_enable_disable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:textSize="18dp"
+            android:text="Enable/ Disable Notification speaker:"/>
+
+        <Switch
+            android:id="@+id/switch_enable_disable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showText="true"
+            android:textSize="16sp"
+            android:textOff="Off"
+            android:textOn="On"
+            android:layout_gravity="center_horizontal"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track"
+            android:layout_below="@+id/text_enable_disable"
+            android:layout_marginTop="80dp"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_cover"
+        android:paddingBottom="70dp"
+        android:paddingTop="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/frame_enable_disable">
+
+        <RadioGroup
+            android:id="@+id/radioGroup_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_English"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="English"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_Hindi"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Hindi"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </FrameLayout>
+
+</RelativeLayout>
